@@ -1,7 +1,6 @@
 'use client'
 
-import { useState } from "react";
-import { set } from "react-hook-form";
+import React, { useState } from "react";
 
 interface Personality {
     id: number;
@@ -89,12 +88,12 @@ export default function Configuration() {
     const [personality, setPersonality] = useState<Personality>(personalities[0]);
     const [place, setPlace] = useState<string>("casa");
 
-    const selectPersonality = (e: any) => {
+    const selectPersonality = (e: React.ChangeEvent<HTMLSelectElement>) => {
         const selected = personalities.find(p => p.id === parseInt(e.target.value));
         setPersonality(selected as Personality);
     }
 
-    const selectPlace = (e: any) => {
+    const selectPlace = (e: React.ChangeEvent<HTMLSelectElement>) => {
         setPlace(e.target.value);
     }
 

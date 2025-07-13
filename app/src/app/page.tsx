@@ -1,15 +1,15 @@
 'use client'
 
-import Link from "next/link";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 export default function Home() {
 
-  const { register, handleSubmit, reset, formState: { errors } } = useForm();
+  const { register, handleSubmit, reset } = useForm();
 
   const [participants, setParticipants] = useState<string[]>([]);
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleAddParticipant = (data: any) => {
     const { participant } = data;
     if (participant.trim() !== "") {

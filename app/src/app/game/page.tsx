@@ -67,7 +67,7 @@ export default function Game() {
             });
     }
 
-    const updateVibesIA = (e: any) => {
+    const updateVibesIA = (e: React.ChangeEvent<HTMLSelectElement>) => {
         setVibe(e.target.value);
     }
 
