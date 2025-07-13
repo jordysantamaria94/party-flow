@@ -1,0 +1,24 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    "target": "es2018" /* Especifica la versión de ECMAScript para el código de salida. */,
+    "module": "commonjs" /* Especifica el sistema de módulos para el código de salida. */,
+    "lib": [
+      "es2018",
+      "dom"
+    ] /* Bibliotecas a incluir en la compilación. 'dom' es útil para algunas definiciones. */,
+    "outDir": "./dist" /* Directorio donde se emitirá el JavaScript compilado. */,
+    "rootDir": "./src" /* Directorio raíz de tus archivos fuente TypeScript. */,
+    "strict": true /* Habilita todas las opciones de verificación de tipos estrictas. */,
+    "esModuleInterop": true /* Permite la interoperabilidad con módulos CommonJS. */,
+    "skipLibCheck": true /* Omite la verificación de tipos de todos los archivos de declaración (.d.ts). */,
+    "forceConsistentCasingInFileNames": true /* Asegura que los nombres de archivo sean consistentes en el casing. */,
+    "resolveJsonModule": true /* Incluye la importación de módulos JSON. */,
+    "allowJs": true /* Permite archivos JavaScript en tu proyecto. */
+  },
+  "include": ["src/**/*.ts"] /* Archivos a incluir en la compilación. */,
+  "exclude": [
+    "node_modules",
+    "dist"
+  ] /* Archivos a excluir de la compilación. */
+}
