@@ -43,6 +43,7 @@ export default function Game() {
 
         setIndexReto(0);
 
+        //cambia
         fetch("https://api-partyflow.vercel.app/api/challenges/generate",
             {
                 method: "POST",
